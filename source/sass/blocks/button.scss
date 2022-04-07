@@ -1,0 +1,25 @@
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  padding: 16px 0;
+
+  &:hover {
+    color:#FFFFFF;
+    background-color: #444444;
+  }
+
+  &:active {
+    color:#FFFFFF;
+    background-color: #444444;
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,23 @@
+.categories-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories-list__link {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-decoration: none;
+
+  &--decor {
+    background-color:#63D1BB;
+  }
+
+  &--toys {
+    background-color:#46C1AE;
+  }
+}
