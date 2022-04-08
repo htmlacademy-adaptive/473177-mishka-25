@@ -5,46 +5,46 @@
     <title>Mагазин «Мишка»</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="main-header">
-      <a class="main-header__logo logo">
+  <body class="page">
+    <header class="page__header main-header">
+      <a class="main-header__logo logo" href="index.html">
         <img class="main-header__logo-image logo__image" src="" width="86" height="35" alt="Логотип магазина Мишка.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        <ul class="main-nav__list main-nav__list--site">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list promo-list">
-          <li class="promo-list__item">
-            <a class="promo-list__link" href="#">Новые поступления</a>
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="promo-list__item">
-            <a class="promo-list__link" href="#">Распродажа</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
           </li>
-          <li class="promo-list__item promo-list__item--delivery">
+        </ul>
+        <ul class="main-nav__list main-nav__list--promo">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Распродажа</a>
+          </li>
+          <li class="main-nav__item main-nav__item--delivery">
             Бесплатная доставка по России
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main-container">
+    <main class="page__main main-container">
       <section class="catalog">
         <h1 class="catalog__title title">Каталог товаров</h1>
         <ul class="catalog__list">
@@ -102,7 +102,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="page__footer main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo">
 
