@@ -5,19 +5,19 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #444444;
-  background-color: #ffffff;
-  border: 2px solid #444444;
+  color: $primary-color;
+  background-color: $white;
+  border: 2px solid $primary-color;
   padding: 16px 0;
 
   &:hover {
-    color: #ffffff;
-    background-color: #444444;
+    color: $white;
+    background-color: $primary-color;
   }
 
   &:active {
-    color: #ffffff;
-    background-color: #444444;
+    color: $white;
+    background-color: $primary-color;
     opacity: 0.3;
   }
 }

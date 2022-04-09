@@ -8,14 +8,14 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
 
   &--decor {
-    background-color: #63d1bb;
+    background-color: $accent-color;
   }
 
   &--toys {
-    background-color: #46c1ae;
+    background-color: $accent-color-dark;
   }
 }
