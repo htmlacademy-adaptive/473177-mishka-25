@@ -1,0 +1,18 @@
+.reviews {
+  line-height: 30px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author-info {
+  font-size: 17px;
+  line-height: 30px;
+  font-style: normal;
+  color: $secondary-color;
+}
+
+.reviews__author-name {
+  font-weight: 700;
+}

@@ -1,0 +1,25 @@
+.form {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $secondary-color;
+}
+
+.form__title {
+  color: $accent-color;
+}
+
+.form__group {
+  border: none;
+}
+
+.form__list {
+  list-style-type: none;
+}
+
+.form__add-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $primary-color;
+}

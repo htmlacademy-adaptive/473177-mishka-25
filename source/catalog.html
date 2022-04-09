@@ -3,85 +3,86 @@
   <head>
     <meta charset="utf-8">
     <title>Mагазин «Мишка»</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="main-header">
-      <a class="main-header__logo logo">
+  <body class="page">
+    <header class="page__header main-header">
+      <a class="main-header__logo logo" href="index.html">
         <img class="main-header__logo-image logo__image" src="" width="86" height="35" alt="Логотип магазина Мишка.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        <ul class="main-nav__list main-nav__list--site">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__search" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__cart" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list promo-list">
-          <li class="promo-list__item">
-            <a class="promo-list__link" href="#">Новые поступления</a>
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="promo-list__item">
-            <a class="promo-list__link" href="#">Распродажа</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
           </li>
-          <li class="promo-list__item promo-list__item--delivery">
+        </ul>
+        <ul class="main-nav__list main-nav__list--promo">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Распродажа</a>
+          </li>
+          <li class="main-nav__item main-nav__item--delivery">
             Бесплатная доставка по России
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main-container">
-      <h1 class="title">Каталог товаров</h1>
+    <main class="page__main main-container">
       <section class="catalog">
+        <h1 class="catalog__title title">Каталог товаров</h1>
         <ul class="catalog__list">
           <li class="catalog__item product-card">
             <img class="product-card__image" src="" alt="Игрушка зайчик.">
-            <a class="product-card__link">
+            <a class="product-card__link" href="#">
               <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
             </a>
             <p class="product-card__info">Рост 30 см, вес 200 г</p>
             <div class="product-card__wrapper">
               <span class="product-card__price">1 200 руб.</span>
-              <a class="product-card__link">
+              <a class="product-card__link" href="#">
                 <span class="visually-hidden">Добавить в корзину</span>
               </a>
             </div>
           </li>
           <li class="catalog__item product-card">
             <img class="product-card__image" src="" alt="Корзинка для белья.">
-            <a class="product-card__link">
+            <a class="product-card__link" href="#">
               <h2 class="product-card__title">Корзинка для белья</h2>
             </a>
             <p class="product-card__info">Диаметр 15 см, высота 10 см</p>
             <div class="product-card__wrapper">
               <span class="product-card__price">690 руб.</span>
-              <a class="product-card__link">
+              <a class="product-card__link" href="#">
                 <span class="visually-hidden">Добавить в корзину</span>
               </a>
             </div>
           </li>
           <li class="catalog__item product-card">
             <img class="product-card__image" src="" alt="Большая корзинка для игрушек.">
-            <a class="product-card__link">
+            <a class="product-card__link" href="#">
               <h2 class="product-card__title">Большая корзинка для игрушек</h2>
             </a>
             <p class="product-card__info">Диаметр 30 см, высота 30 см</p>
             <div class="product-card__wrapper">
               <span class="product-card__price">1 500 руб.</span>
-              <a class="product-card__link">
+              <a class="product-card__link" href="#">
                 <span class="visually-hidden">Добавить в корзину</span>
               </a>
             </div>
@@ -101,7 +102,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="page__footer main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo">
 
@@ -123,7 +124,7 @@
             </a>
           </li>
         </ul>
-        <a class="main-footer__copyright">
+        <a class="main-footer__copyright" href="#">
           Разработано
         </a>
       </div>
