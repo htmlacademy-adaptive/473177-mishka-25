@@ -1,0 +1,29 @@
+.inner-header__title {
+  display: block;
+  width: 260px;
+  text-align: center;
+  margin: 73px auto 120px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .inner-header__title {
+    margin: 0 auto 372px auto;
+    width: 668px;
+  }
+
+  .inner-header__wrapper {
+    padding: 155px 50px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-header__title {
+    margin: 0 auto 355px auto;
+    width: 700px;
+  }
+
+  .inner-header__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}

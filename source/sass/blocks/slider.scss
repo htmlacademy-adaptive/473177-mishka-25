@@ -1,0 +1,15 @@
+.slider__item {
+  display: none;
+}
+
+.slider__item--current {
+  display: block;
+}
+
+.slider__button {
+  width: 128px;
+  padding: 0;
+  height: 52px;
+  border: 1px solid $border-color;
+  background-color: transparent;
+}

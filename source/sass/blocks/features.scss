@@ -1,0 +1,47 @@
+.features__wrapper {
+  padding: 30px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.features__item {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $primary-color;
+  padding-top: 85px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__wrapper {
+    padding: 55px 50px 83px;
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 70px;
+  }
+
+  .features__item {
+    padding-top: 110px;
+
+    &--price {
+      grid-row: 2/3;
+    }
+
+    &--likes {
+      grid-row: 3/4;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__wrapper {
+    padding: 70px 250px 90px 225px;
+  }
+}
