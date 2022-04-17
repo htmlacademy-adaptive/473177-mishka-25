@@ -381,6 +381,8 @@
 @media (min-width: 1150px) {
   .special__wrapper {
     padding: 115px 50px 73px;
+    width: 1050px;
+    margin: 0 auto;
   }
 
   .special__header {
@@ -484,7 +486,10 @@
 }
 @media (min-width: 1150px) {
   .features__wrapper {
-    padding: 70px 250px 90px 225px;
+    padding: 70px 250px 90px 175px;
+    width: 1050px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 .reviews {
@@ -569,6 +574,9 @@
 
   .reviews__wrapper {
     padding: 80px 0 100px 175px;
+    width: 1050px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .reviews__write {
@@ -662,8 +670,11 @@
 }
 @media (min-width: 1150px) {
   .contacts__wrapper {
-    padding: 150px 50px 105px 225px;
+    padding: 150px 50px 105px 175px;
     position: relative;
+    width: 1050px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .contacts__table tbody {
@@ -742,6 +753,12 @@
     width: 180px;
     margin: 0;
     padding: 0;
+  }
+}
+@media (min-width: 1150px) {
+  .main-footer__wrapper {
+    width: 1050px;
+    margin: 0 auto;
   }
 }
 .social-list {
