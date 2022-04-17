@@ -42,6 +42,9 @@
 
 @media (min-width: $desktop-width) {
   .features__wrapper {
-    padding: 70px 250px 90px 225px;
+    padding: 70px 250px 90px 175px;
+    width: 1050px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }

@@ -82,8 +82,11 @@
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
-    padding: 150px 50px 105px 225px;
+    padding: 150px 50px 105px 175px;
     position: relative;
+    width: 1050px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .contacts__table tbody {

@@ -47,3 +47,10 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
