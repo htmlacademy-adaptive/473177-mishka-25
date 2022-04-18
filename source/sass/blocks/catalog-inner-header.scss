@@ -1,0 +1,30 @@
+.catalog-inner-header__title {
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.catalog-inner-header {
+  background-color: $background-section-color;
+  padding: 75px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-inner-header__title {
+    width: 410px;
+  }
+
+  .catalog-inner-header {
+    padding-top: 101px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-inner-header__title {
+    width: 500px;
+  }
+
+  .catalog-inner-header {
+    padding: 103px 0 96px;
+  }
+}
