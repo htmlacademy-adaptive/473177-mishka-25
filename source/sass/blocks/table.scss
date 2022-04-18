@@ -1,3 +1,9 @@
-.table__row {
+.table {
+  line-height: 20px;
+  border-collapse: collapse;
+}
+
+.table__row td {
   border-bottom: 1px solid $border-color;
+  padding: 12px 0;
 }

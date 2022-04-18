@@ -1,0 +1,12 @@
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__wrapper {
+    width: 1050px;
+  }
+}
