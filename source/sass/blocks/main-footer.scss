@@ -25,6 +25,8 @@
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
     padding: 50px 50px 60px;
+    width: 668px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -51,6 +53,5 @@
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
     width: 1050px;
-    margin: 0 auto;
   }
 }
