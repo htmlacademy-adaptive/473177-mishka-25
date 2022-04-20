@@ -1,0 +1,30 @@
+.main-inner__title {
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-inner__title-wrapper {
+  background-color: $background-section-color;
+  padding: 75px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-inner__title {
+    width: 410px;
+  }
+
+  .main-inner__title-wrapper {
+    padding-top: 101px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-inner__title {
+    width: 500px;
+  }
+
+  .main-inner__title-wrapper {
+    padding: 103px 0 96px;
+  }
+}

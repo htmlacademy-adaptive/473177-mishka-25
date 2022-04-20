@@ -6,3 +6,41 @@
 .order__title {
   background-color: $background-section-color;
 }
+
+.order__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.order__text {
+  margin: 17px 0 29px;
+}
+
+.order__form {
+  margin-bottom: 53px;
+}
+
+@media (min-width: $tablet-width) {
+  .order__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .order__text {
+    font-size: 17px;
+    line-height: 30px;
+    width: 668px;
+    margin: 54px auto 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__wrapper {
+    width: 1150px;
+  }
+
+  .order__text {
+    width: 702px;
+    margin: 98px auto 80px;
+  }
+}
