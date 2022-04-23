@@ -32,10 +32,33 @@
   box-shadow: 0 1px 0 $border-color, inset 0 1px 0 $border-color;
   display: block;
   padding: 30px 0 30px 75px;
+  position: relative;
 
   &:hover {
-    opacity: 0.6;
+    color: rgba($secondary-color, .6);
   }
+
+  &:active {
+    color: rgba($secondary-color, .3);
+  }
+}
+
+.main-nav__link-icon {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  fill: $secondary-color;
+  opacity: 0.2;
+}
+
+.main-nav__link:hover .main-nav__link-icon {
+  fill: $accent-color;
+  opacity: 1;
+}
+
+.main-nav__link:active .main-nav__link-icon {
+  fill: $accent-color;
+  opacity: 0.3;
 }
 
 .main-nav__text {
@@ -46,6 +69,67 @@
   position: absolute;
   top: 32px;
   right: 31px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  z-index: 2;
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background-color: $toggle-color;
+  display: block;
+  box-shadow: 0 6px 0 0 $toggle-color, 0 12px 0 0 $toggle-color;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 29px;
+  height: 2px;
+  transform: rotate(45deg);
+  display: block;
+  background-color: $toggle-color;
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 29px;
+  height: 2px;
+  transform: rotate(135deg);
+  display: block;
+  background-color: $toggle-color;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -101,8 +185,21 @@
     }
 
     &--cart {
-      padding-left: 53px;
+      padding-left: 85px;
     }
+  }
+
+  .main-nav__link--search .main-nav__link-icon {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .main-nav__link--cart .main-nav__link-icon {
+    left: 31px;
+    top: 35px;
   }
 
   .main-nav__text {
@@ -129,6 +226,7 @@
         width: 184px;
         border-left: 1px solid $border-color;
         padding-left: 35px;
+        font-size: 17px;
 
         &--catalog {
           padding-left: 0;
@@ -156,7 +254,7 @@
 
     &--user {
       margin: 0;
-      max-width: 320px;
+      max-width: 360px;
     }
   }
 }
