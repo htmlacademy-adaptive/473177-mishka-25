@@ -16,6 +16,20 @@
     padding: 155px 50px 0;
     width: 668px;
     margin: 0 auto;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      height: 24px;
+      width: 100%;
+      z-index: 10;
+      background-image: url('../img/zigzag-white-tablet.svg');
+      background-repeat: repeat-x;
+      background-position: bottom;
+    }
   }
 }
 
@@ -27,5 +41,11 @@
 
   .inner-header__wrapper {
     width: 1050px;
+
+    &::after {
+      background-image: url('../img/zigzag-white-desktop.svg');
+      height: 34px;
+      bottom: -17px;
+    }
   }
 }
