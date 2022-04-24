@@ -5,6 +5,7 @@
 }
 
 .main-nav__logo {
+  cursor: pointer;
   align-self: center;
   padding: 22px 0;
 }
@@ -143,6 +144,14 @@
 
   .main-nav__logo {
     padding: 22px 0 20px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__list {
@@ -241,6 +250,7 @@
       position: absolute;
       bottom: -66px;
       left: 0;
+      z-index: 2;
 
       .main-nav__item:not(:last-child) {
         margin-right: 35px;

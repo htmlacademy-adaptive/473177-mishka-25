@@ -21,7 +21,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -12px;
+      bottom: -6px;
       left: 0;
       height: 24px;
       width: 100%;
@@ -45,7 +45,7 @@
     &::after {
       background-image: url('../img/zigzag-white-desktop.svg');
       height: 34px;
-      bottom: -17px;
+      bottom: -12px;
     }
   }
 }
