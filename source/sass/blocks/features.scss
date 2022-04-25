@@ -6,6 +6,10 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 83px;
+  margin-top: 82px;
 }
 
 .features__item {
@@ -13,7 +17,60 @@
   font-size: 17px;
   line-height: 20px;
   color: $primary-color;
-  padding-top: 85px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &--eco::before {
+    width: 33px;
+    height: 38px;
+    top: -16px - 38px;
+    left: 8px;
+    background-image: url("../img/feature-eco.svg");
+  }
+
+  &--price::before {
+    width: 47px;
+    height: 27px;
+    top: -26px - 27px;
+    left: 0;
+    background-image: url("../img/feature-price.svg");
+  }
+
+  &--likes::before {
+    width: 34px;
+    height: 27px;
+    top: -21px - 27px;
+    left: 7px;
+    background-image: url("../img/feature-likes.svg");
+  }
+
+  &--handmade::before {
+    width: 35px;
+    height: 34px;
+    top: -17px - 34px;
+    left: 3px;
+    background-image: url("../img/feature-handmade.svg");
+  }
+
+  &--local::before {
+    width: 55px;
+    height: 23px;
+    top: -26px - 23px;
+    left: -6px;
+    background-image: url("../img/feature-local.svg");
+  }
+
+  &--gift::before {
+    width: 33px;
+    height: 32px;
+    top: -20px - 32px;
+    left: 3px;
+    background-image: url("../img/feature-gift.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,13 +81,12 @@
   }
 
   .features__list {
-    display: grid;
+    margin-top: 98px;
     grid-template-columns: 1fr 1fr;
-    gap: 0 70px;
+    gap: 110px 70px;
   }
 
   .features__item {
-    padding-top: 110px;
 
     &--price {
       grid-row: 2/3;

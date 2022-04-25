@@ -9,5 +9,6 @@
 
   &:active {
     color: $link-hover-color;
+    border-bottom-color: rgba($accent-color, 0.1);
   }
 }

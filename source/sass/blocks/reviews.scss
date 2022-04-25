@@ -31,6 +31,11 @@
   font-weight: 700;
 }
 
+.reviews__buttons {
+  display: flex;
+  margin: 33px auto 30px;
+}
+
 .reviews__write {
   margin-bottom: 15px;
 }
@@ -65,7 +70,7 @@
   .reviews__buttons {
     position: absolute;
     bottom: 50px;
-    right: 0;
+    right: 69px;
   }
 
   .reviews__write {
@@ -78,6 +83,8 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    max-width: 1050px;
+    margin: 0 auto;
     padding: 0 50px 70px;
   }
 
@@ -92,6 +99,7 @@
   }
 
   .reviews__buttons {
+    right: 19px;
     bottom: 100px;
   }
 }
