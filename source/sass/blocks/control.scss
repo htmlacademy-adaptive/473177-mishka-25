@@ -1,0 +1,45 @@
+.control {
+  position: relative;
+  padding-left: 61px;
+  display: block;
+
+  &:hover .control__mark {
+    border-color: $accent-color;
+  }
+
+  &:active .control__mark {
+    border-color: rgba($primary-color, 0.3);
+  }
+}
+
+.control__mark {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid $primary-color;
+}
+
+.control__input {
+  &--checkbox:checked + .control__mark {
+    background-image: url('../img/input-checkbox.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--radio + .control__mark {
+    border-radius: 50%;
+  }
+
+  &--radio:checked + .control__mark::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+}
