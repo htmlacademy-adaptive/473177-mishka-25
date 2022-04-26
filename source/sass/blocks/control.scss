@@ -23,7 +23,7 @@
 
 .control__input {
   &--checkbox:checked + .control__mark {
-    background-image: url('../img/input-checkbox.svg');
+    background-image: url("../img/input-checkbox.svg");
     background-repeat: no-repeat;
     background-position: center;
   }

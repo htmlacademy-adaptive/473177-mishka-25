@@ -1,17 +1,17 @@
 .zigzag {
-  background-image: url('../img/zigzag-line-mobile.svg');
+  background-image: url("../img/zigzag-line-mobile.svg");
   background-position: bottom;
   background-repeat: repeat-x;
 }
 
 @media (min-width: $tablet-width) {
   .zigzag {
-    background-image: url('../img/zigzag-line-tablet.svg');
+    background-image: url("../img/zigzag-line-tablet.svg");
   }
 }
 
 @media (min-width: $desktop-width) {
   .zigzag {
-    background-image: url('../img/zigzag-line-desktop.svg');
+    background-image: url("../img/zigzag-line-desktop.svg");
   }
 }

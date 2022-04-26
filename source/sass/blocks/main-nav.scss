@@ -35,11 +35,11 @@
   position: relative;
 
   &:hover {
-    color: rgba($secondary-color, .6);
+    color: rgba($secondary-color, 0.6);
   }
 
   &:active {
-    color: rgba($secondary-color, .3);
+    color: rgba($secondary-color, 0.3);
   }
 }
 
