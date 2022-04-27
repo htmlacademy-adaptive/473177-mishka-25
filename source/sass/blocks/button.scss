@@ -17,8 +17,7 @@
   }
 
   &:active {
-    color: $white;
+    color: rgba($white, 0.3);
     background-color: $primary-color;
-    opacity: 0.3;
   }
 }
