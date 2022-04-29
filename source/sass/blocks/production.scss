@@ -1,8 +1,7 @@
 .production {
   border: 1px solid $border-color;
   font-size: 13px;
-  width: 260px;
-  margin: 0 auto 58px;
+  margin: 0 30px 58px;
 
   &:hover .production__wrapper {
     box-shadow: 0 6px 10px rgba($secondary-color, 0.1);
@@ -37,8 +36,8 @@
 }
 
 .production__video {
-  width: 260px;
-  height: 150px;
+  width: 100%;
+  height: auto;
 }
 
 .production__video-play {
@@ -74,7 +73,7 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    width: 668px;
+    margin: 0 50px 58px;
   }
 
   .production__wrapper {
@@ -88,8 +87,8 @@
   }
 
   .production__video {
-    width: 668px;
-    height: 455px;
+    width: 100%;
+    height: auto;
   }
 
   .production__title {
@@ -116,7 +115,8 @@
 
 @media (min-width: $desktop-width) {
   .production {
-    width: 1050px;
+    max-width: 1050px;
+    margin: 0 auto 105px;
   }
 
   .production__wrapper {

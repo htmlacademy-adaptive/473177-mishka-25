@@ -76,8 +76,6 @@
 @media (min-width: $tablet-width) {
   .features__wrapper {
     padding: 55px 50px 83px;
-    width: 668px;
-    margin: 0 auto;
   }
 
   .features__list {
@@ -100,7 +98,8 @@
 @media (min-width: $desktop-width) {
   .features__wrapper {
     padding: 70px 250px 90px 175px;
-    width: 1050px;
+    max-width: 1050px;
+    margin: 0 auto;
     box-sizing: border-box;
   }
 }
