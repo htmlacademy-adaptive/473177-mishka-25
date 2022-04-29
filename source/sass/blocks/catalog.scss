@@ -1,8 +1,7 @@
 .catalog__list {
   list-style-type: none;
   padding: 0;
-  width: 260px;
-  margin: 30px auto;
+  margin: 30px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
@@ -10,8 +9,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog__list {
-    width: 668px;
-    margin: 67px auto 53px;
+    margin: 67px 50px 53px;
     gap: 54px;
   }
 }
@@ -20,6 +18,7 @@
   .catalog__list {
     gap: 51px;
     grid-template-columns: 316px 316px 316px;
-    width: 1050px;
+    max-width: 1050px;
+    margin: 111px auto 57px;
   }
 }

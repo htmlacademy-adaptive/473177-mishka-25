@@ -9,9 +9,13 @@
   <body class="page">
     <header class="page__header main-header">
       <div class="main-header__wrapper">
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--opened main-nav--inner">
           <a class="main-nav__logo logo" href="index.html">
-            <img class="main-nav__logo-image logo__image" src="img/mishka-logo-mobile.svg" width="86px" height="35px" alt="Логотип магазина Мишка.">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/header-logo-desktop.svg" width="137px" height="66px">
+              <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg" width="113px" height="46px">
+              <img class="main-nav__logo-image logo__image" src="img/header-logo-mobile.svg" width="86px" height="35px" alt="Логотип магазина Мишка.">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -64,7 +68,13 @@
       <section class="catalog">
         <ul class="catalog__list">
           <li class="catalog__item product-card">
-            <img class="product-card__image" src="" alt="Игрушка зайчик.">
+            <a class="product-card__link-image" href="#">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                <img class="product-card__image" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="Игрушка зайчик.">
+              </picture>
+            </a>
             <div class="product-card__wrapper">
               <a class="product-card__link" href="#">
                 <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
@@ -82,7 +92,13 @@
             </div>
           </li>
           <li class="catalog__item product-card">
-            <img class="product-card__image" src="" alt="Корзинка для белья.">
+            <a class="product-card__link-image" href="#">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+                <img class="product-card__image" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья.">
+              </picture>
+            </a>
             <div class="product-card__wrapper">
               <a class="product-card__link" href="#">
                 <h2 class="product-card__title">Корзинка для белья</h2>
@@ -100,7 +116,13 @@
             </div>
           </li>
           <li class="catalog__item product-card">
-            <img class="product-card__image" src="" alt="Большая корзинка для игрушек.">
+            <a class="product-card__link-image" href="#">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+                <img class="product-card__image" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек.">
+              </picture>
+            </a>
             <div class="product-card__wrapper">
               <a class="product-card__link" href="#">
                 <h2 class="product-card__title">Большая корзинка для игрушек</h2>
@@ -123,7 +145,11 @@
         <div class="production__wrapper">
           <h2 class="production__title">Процесс производства</h2>
           <div class="production__video-wrapper">
-            <video class="production__video" controls="controls"></video>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+              <img class="production__video" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Производство.">
+            </picture>
             <a class="production__video-play" href="#">
               <span class="visually-hidden">Воспроизвести видео</span>
               <svg width="101" height="77" viewBox="0 0 101 77" xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +193,7 @@
         </ul>
         <div class="main-footer__copyright">
           <span>Разработано</span>
-          <a class="main-footer__copyright-link" href="#">
+          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/></svg>
           </a>
         </div>
