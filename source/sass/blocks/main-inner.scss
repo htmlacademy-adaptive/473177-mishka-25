@@ -1,4 +1,5 @@
 .main-inner__title {
+  font-size: 27px;
   width: 250px;
   text-align: center;
   margin: 0 auto;
@@ -6,16 +7,18 @@
 
 .main-inner__title-wrapper {
   background-color: $background-section-color;
-  padding: 75px 0;
+  padding: 73px 0;
 }
 
 @media (min-width: $tablet-width) {
   .main-inner__title {
+    font-size: 43px;
     width: 410px;
   }
 
   .main-inner__title-wrapper {
-    padding-top: 57px;
+    padding-top: 37px;
+    padding-bottom: 80px;
     position: relative;
 
     &::after {
@@ -35,11 +38,12 @@
 
 @media (min-width: $desktop-width) {
   .main-inner__title {
+    font-size: 53px;
     width: 500px;
   }
 
   .main-inner__title-wrapper {
-    padding-bottom: 96px;
+    padding-bottom: 105px;
 
     &::after {
       background-image: url("../img/zigzag-white-desktop.svg");

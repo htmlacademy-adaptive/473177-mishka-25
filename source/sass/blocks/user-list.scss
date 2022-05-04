@@ -1,0 +1,46 @@
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    flex-direction: row;
+  }
+
+  .user-list__link {
+    border-left: 1px solid $border-color;
+
+    &--search {
+      width: 82px;
+      height: 88px;
+      padding: 0;
+
+      span {
+        display: none;
+      }
+
+      .user-list__link-icon {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+
+    &--cart {
+      padding-left: 85px;
+
+      .user-list__link-icon {
+        left: 31px;
+        top: 35px;
+      }
+    }
+  }
+}

@@ -4,6 +4,8 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .categories-list__link {
@@ -82,6 +84,10 @@
 
     &:hover {
       transform: translateY(-5px);
+    }
+
+    &--toys .categories-list__link-icon {
+      right: 33px;
     }
   }
 }
