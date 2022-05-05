@@ -131,11 +131,10 @@
     margin-top: 18px;
   }
 
-
   &:hover,
   &:active {
     outline: none;
-    border-color: $accent-color;
+    border-color: $green-border-color;
   }
 }
 

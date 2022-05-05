@@ -81,7 +81,7 @@
             </li>
             <li class="categories-list__item">
               <a class="categories-list__link categories-list__link--toys" href="#">
-                <svg class="categories-list__link-icon" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <svg class="categories-list__link-icon" width="60" height="60">
                   <use xlink:href="img/sprite.svg#icon-toys"></use>
                 </svg>
                 Детские игрушки
@@ -116,12 +116,12 @@
               </tr>
             </table>
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/special-desktop.jpg 1x, img/special-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/special-tablet.jpg 1x, img/special-tablet@2x.jpg 2x">
-              <img class="special__image" src="img/special-mobile.jpg" srcset="img/special-mobile@2x.jpg 2x" alt="Вязаные корзинки.">
+              <source media="(min-width: 1150px)" srcset="img/special-desktop.jpg 1x, img/special-desktop@2x.jpg 2x" width="525px" height="636">
+              <source media="(min-width: 768px)" srcset="img/special-tablet.jpg 1x, img/special-tablet@2x.jpg 2x" width="334" height="414">
+              <img class="special__image" src="img/special-mobile.jpg" srcset="img/special-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки.">
             </picture>
             <p class="special__price">Цена: 990 руб.</p>
-            <a class="special__button button" href="#">Заказать</a>
+            <button class="special__button button" type="button">Заказать</button>
           </div>
         </div>
       </section>
@@ -256,6 +256,45 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal modal--close">
+      <button class="modal__close">
+        <span class="visually-hidden"></span>
+      </button>
+      <section class="modal__content modal-size">
+        <h2 class="modal-size__title title">
+          Добавить в&nbsp;корзину
+        </h2>
+        <p class="modal-size__text">
+          Выберите размер:
+        </p>
+        <form class="modal-size__form" method="get" action="https://echo.htmlacademy.ru/">
+          <ul class="modal-size__list">
+            <li class="modal-size__item">
+              <input class="modal-size__input visually-hidden" type="radio" value="s" id="size-s" name="size-choice" checked>
+              <label class="modal-size__button" for="size-s">
+                S
+              </label>
+            </li>
+            <li class="modal-size__item">
+              <input class="modal-size__input visually-hidden" type="radio" value="m" id="size-m" name="size-choice">
+              <label class="modal-size__button" for="size-m">
+                M
+              </label>
+            </li>
+            <li class="modal-size__item">
+              <input class="modal-size__input visually-hidden" type="radio" value="m" id="size-l" name="size-choice">
+              <label class="modal-size__button" for="size-l">
+                L
+              </label>
+            </li>
+          </ul>
+          <a class="modal-size__submit-button" href="#">
+            Добавить
+          </a>
+        </form>
+      </section>
+    </div>
 
     <script src="script.js"></script>
   </body>
