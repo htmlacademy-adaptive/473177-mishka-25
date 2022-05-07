@@ -26,6 +26,7 @@
 
 .special__image {
   width: 100%;
+  height: auto;
   max-width: 320px;
   display: block;
   margin: 0 auto 25px;
@@ -75,8 +76,6 @@
   }
 
   .special__image {
-    width: 100%;
-    height: auto;
     position: absolute;
     right: -100%;
     bottom: 0;
@@ -102,7 +101,6 @@
   }
 
   .special__header {
-    flex-direction: row-reverse;
     justify-content: start;
     margin-bottom: 30px;
   }
@@ -112,6 +110,7 @@
   }
 
   .special__tag {
+    order: -1;
     margin: 0 43px 14px 32px;
   }
 

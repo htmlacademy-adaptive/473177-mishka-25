@@ -167,6 +167,14 @@
   width: 100%;
 }
 
+@media (min-width: 334px) {
+  .form__list--radio {
+    .form__item {
+      margin-bottom: 36px;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form__group {
     position: relative;
