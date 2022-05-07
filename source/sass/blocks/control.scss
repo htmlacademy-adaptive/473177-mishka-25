@@ -15,7 +15,9 @@
 .control__mark {
   position: absolute;
   left: 0;
-  top: -10px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
   width: 35px;
   height: 35px;
   border: 2px solid $primary-color;
