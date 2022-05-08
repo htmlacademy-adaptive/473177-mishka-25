@@ -1,5 +1,5 @@
 .special__wrapper {
-  padding: 31px 30px 36px;
+  padding: 31px 30px 42px;
 }
 
 .special__title {
@@ -16,16 +16,17 @@
 }
 
 .special__description {
-  margin: 0 0 28px 0;
+  margin: 0 0 15px 0;
 }
 
 .special__table {
-  margin-bottom: 41px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
 .special__image {
   width: 100%;
+  height: auto;
   max-width: 320px;
   display: block;
   margin: 0 auto 25px;
@@ -44,16 +45,18 @@
 
 @media (min-width: $tablet-width) {
   .special__wrapper {
-    padding: 40px 50px 52px;
+    padding: 53px 50px 69px;
   }
 
   .special__header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
+    padding-right: 13px;
   }
 
   .special__tag {
+    line-height: 17px;
     align-self: center;
     width: 100px;
     text-align: center;
@@ -67,14 +70,12 @@
   }
 
   .special__description {
-    margin-bottom: 48px;
+    margin-bottom: 36px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .special__image {
-    width: 100%;
-    height: auto;
     position: absolute;
     right: -100%;
     bottom: 0;
@@ -94,14 +95,14 @@
 
 @media (min-width: $desktop-width) {
   .special__wrapper {
-    padding: 115px 50px 73px;
+    padding: 132px 0 95px;
     max-width: 1050px;
     margin: 0 auto;
   }
 
   .special__header {
-    flex-direction: row-reverse;
     justify-content: start;
+    margin-bottom: 30px;
   }
 
   .special__title {
@@ -109,7 +110,8 @@
   }
 
   .special__tag {
-    margin: 0 43px 0 32px;
+    order: -1;
+    margin: 0 43px 14px 32px;
   }
 
   .special__main {
@@ -126,7 +128,7 @@
   }
 
   .special__description {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .special__table {

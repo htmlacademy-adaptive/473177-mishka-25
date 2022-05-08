@@ -34,25 +34,29 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 22px 0;
 }
 
 .main-footer__copyright-link {
   margin-left: 27px;
 
-  &:hover svg {
+  svg {
     fill: $accent-color;
   }
 
+  &:hover svg {
+    fill: $link-hover-color;
+  }
+
   &:active svg {
-    fill: $accent-color;
+    fill: $link-hover-color;
     opacity: 0.3;
   }
 }
 
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
-    padding: 50px 50px 60px;
+    padding: 48px 50px 60px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

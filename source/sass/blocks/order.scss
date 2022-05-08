@@ -20,6 +20,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order__form {
+    margin-bottom: 51px;
+  }
+
   .order__wrapper {
     padding: 0;
   }
@@ -28,11 +32,15 @@
     font-size: 17px;
     line-height: 30px;
     width: 668px;
-    margin: 54px auto 80px;
+    margin: 61px auto 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .order__form {
+    margin-bottom: 48px;
+  }
+
   .order__wrapper {
     max-width: 1150px;
     margin: 0 auto;
@@ -40,6 +48,6 @@
 
   .order__text {
     width: 702px;
-    margin: 98px auto 80px;
+    margin: 108px auto 80px;
   }
 }

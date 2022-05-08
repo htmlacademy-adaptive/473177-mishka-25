@@ -20,16 +20,16 @@
 
 @media (min-width: $tablet-width) {
   .inner-header {
-    padding-top: 109px;
+    padding-top: 90px;
     background-image: url("../img/inner-header-bg-tablet.jpg");
-    background-position: 50% -50px;
+    background-position: 50% -60px;
     background-size: 768px auto;
     position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: -6px;
+      bottom: -12px;
       left: 0;
       height: 24px;
       width: 100%;
@@ -56,7 +56,7 @@
 
 @media (min-width: $desktop-width) {
   .inner-header {
-    padding-top: 114px;
+    padding-top: 95px;
     background-image: url("../img/inner-header-bg-desktop.jpg");
     background-size: 1150px auto;
 

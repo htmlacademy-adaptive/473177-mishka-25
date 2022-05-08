@@ -81,10 +81,13 @@
   .features__list {
     margin-top: 98px;
     grid-template-columns: 1fr 1fr;
-    gap: 110px 70px;
+    gap: 111px 0;
   }
 
   .features__item {
+    font-size: 20px;
+    line-height: 22px;
+
     &--price {
       grid-row: 2/3;
     }
@@ -97,9 +100,14 @@
 
 @media (min-width: $desktop-width) {
   .features__wrapper {
-    padding: 70px 250px 90px 175px;
+    padding: 70px 200px 90px 175px;
     max-width: 1050px;
     margin: 0 auto;
     box-sizing: border-box;
+  }
+
+  .features__list {
+    margin-top: 95px;
+    gap: 110px 26px;
   }
 }
