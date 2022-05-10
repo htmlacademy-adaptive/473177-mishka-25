@@ -95,11 +95,11 @@
 
   .production__title {
     font-size: 20px;
-    padding: 0 107px 25px;
+    padding: 0 107px;
+    margin-bottom: 25px;
 
     &::before {
       left: 41px;
-      top: -5px;
     }
   }
 
@@ -148,6 +148,7 @@
     &::before {
       left: 0;
       top: 5px;
+      margin: 0;
     }
   }
 
