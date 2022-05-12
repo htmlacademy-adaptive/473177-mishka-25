@@ -26,6 +26,10 @@
     background-size: 768px auto;
     position: relative;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/inner-header-bg-tablet@2x.jpg");
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -37,10 +41,6 @@
       background-image: url("../img/zigzag-white-tablet.svg");
       background-repeat: repeat-x;
       background-position: bottom;
-    }
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/inner-header-bg-tablet@2x.jpg");
     }
   }
 
