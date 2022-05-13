@@ -12,7 +12,8 @@
   padding: 15px 0;
   display: block;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $white;
     background-color: $primary-color;
     transition: 0.5s;
