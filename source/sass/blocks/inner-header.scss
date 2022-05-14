@@ -3,6 +3,7 @@
   width: 260px;
   text-align: center;
   margin: 0 auto 120px auto;
+  font-size: 27px;
 }
 
 .inner-header {
@@ -26,6 +27,10 @@
     background-size: 768px auto;
     position: relative;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/inner-header-bg-tablet@2x.jpg");
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -38,15 +43,12 @@
       background-repeat: repeat-x;
       background-position: bottom;
     }
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/inner-header-bg-tablet@2x.jpg");
-    }
   }
 
   .inner-header__title {
     margin: 0 auto 372px auto;
     width: 668px;
+    font-size: 43px;
   }
 
   .inner-header__wrapper {
@@ -74,6 +76,7 @@
   .inner-header__title {
     margin: 0 auto 355px auto;
     width: 700px;
+    font-size: 53px;
   }
 
   .inner-header__wrapper {
