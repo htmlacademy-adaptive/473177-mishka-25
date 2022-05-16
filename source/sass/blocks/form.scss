@@ -182,7 +182,7 @@
     margin-bottom: 0;
 
     &--radio {
-      padding: 0 50px 68px 236px;
+      padding: 0 50px 9px 236px;
     }
 
     &--checkbox {
@@ -233,19 +233,19 @@
   .form__list {
     padding: 0;
 
+    &--radio .form__item {
+      margin-bottom: 40px;
+    }
+
     &--checkbox {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0 58px;
 
       .form__item {
-        margin-bottom: 0;
+        margin-bottom: 58px;
       }
     }
-  }
-
-  .form__item:not(:last-child) {
-    margin-bottom: 58px;
   }
 
   .form__item--text:not(:last-child) {
@@ -334,7 +334,7 @@
     }
 
     &--radio {
-      padding: 0 225px 64px 244px;
+      padding: 0 225px 7px 244px;
     }
 
     &--checkbox {
