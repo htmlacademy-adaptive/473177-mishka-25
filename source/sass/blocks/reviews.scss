@@ -33,7 +33,7 @@
 
 .reviews__buttons {
   display: flex;
-  margin: 28px auto 35px;
+  margin: 28px auto 37px;
 }
 
 .reviews__write {
@@ -63,7 +63,7 @@
 
   .reviews__text {
     font-size: 17px;
-    margin-bottom: 61px;
+    margin-bottom: 58px;
   }
 
   .reviews__author-info {
@@ -79,7 +79,7 @@
 
   .reviews__buttons {
     position: absolute;
-    bottom: 67px;
+    bottom: 75px;
     right: 69px;
     margin: 0;
   }
@@ -123,6 +123,7 @@
 
   .reviews__write {
     right: 0;
+    top: 80px;
   }
 
   .reviews__buttons {

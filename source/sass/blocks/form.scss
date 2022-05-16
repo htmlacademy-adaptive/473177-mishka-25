@@ -116,7 +116,6 @@
     padding: 17px 10px 17px 0;
   }
 
-
   &--text {
     padding: 21px 10px 13px 0;
   }
@@ -182,7 +181,7 @@
     margin-bottom: 0;
 
     &--radio {
-      padding: 0 50px 9px 236px;
+      padding: 0 50px 10px 236px;
     }
 
     &--checkbox {
@@ -198,7 +197,7 @@
     }
 
     &--add {
-      padding: 50px 50px 50px 218px;
+      padding: 50px 50px 53px 218px;
     }
   }
 
@@ -361,7 +360,7 @@
   .form__list {
     &--checkbox {
       gap: 0;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 264px 264px 1fr;
     }
   }
 
