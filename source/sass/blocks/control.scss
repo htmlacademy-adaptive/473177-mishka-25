@@ -44,6 +44,10 @@
     border-radius: 50%;
     background-color: $accent-color;
   }
+
+  &:focus ~ .control__mark {
+    border-color: $accent-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
